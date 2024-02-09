@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
+        currentLevel = 1;
+
         if (Instance != null && Instance != this)
         {
             Destroy(this);
