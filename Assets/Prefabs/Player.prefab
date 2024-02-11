@@ -36,7 +36,7 @@ Transform:
   m_Children:
   - {fileID: 8785412731407570765}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7153440330393141520
 SpriteRenderer:
@@ -131,6 +131,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerMovement: {fileID: 9222183659359810929}
   shooting: {fileID: 3957895525107202764}
+  playerDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &9222183659359810929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,8 +161,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerRigidbody: {fileID: 2179491464149901828}
   firePoint: {fileID: 8785412731407570765}
-  bulletPrefab: {fileID: 1550397754983296589, guid: b39da7a0631118f4ba940d7a6d71b538, type: 3}
-  bulletForce: 20
+  bulletPrefab: {fileID: 7022004350401223817, guid: 779aa76a4aa2eba4485ab9dc8d1da8bf, type: 3}
+  bulletForce: 5
   camera: {fileID: 0}
 --- !u!61 &-7174965658948502118
 BoxCollider2D:
